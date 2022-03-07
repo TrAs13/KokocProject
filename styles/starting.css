@@ -1,16 +1,16 @@
 .starting {
-  padding: 49px 0px 87px 0px;
+  padding: 3.0625rem 0px 5.4375rem 0px;
   background-color: #651fff;
 }
 
 .starters {
   display: flex;
-  gap: 38px;
+  gap: 2.375rem;
 }
 
 .starters__item {
   display: flex;
-  gap: 19px;
+  gap: 1.1875rem;
   align-items: center;
 }
 
@@ -22,10 +22,10 @@
   min-height: 62px;
   background: url(../img/starting/circle.svg);
   font-family: "Roboto Condensed";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: 0em;
   text-align: center;
 }
@@ -39,27 +39,27 @@
     gap: 0px;
   }
   .starters__item {
-    margin-top: 38px;
+    margin-top: 2.375rem;
     width: 50%;
   }
   .starting {
-    padding-left: 140px;
+    padding-left: 8.75rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .starters__item {
-    margin-top: 38px;
+    margin-top: 2.7143rem;
     width: 100%;
   }
 }
 @media screen and (max-width: 481px) {
   .starting {
     padding-left: 0;
-    padding-bottom: 30px;
+    padding-bottom: 2.5rem;
   }
   .starters {
-    margin-top: 37px;
-    padding-left: 12px;
+    margin-top: 3.0833rem;
+    padding-left: 1rem;
   }
 }

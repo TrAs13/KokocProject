@@ -5,7 +5,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html {
   font-family: "Roboto";
+  font-size: 16px;
 }
 * {
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 481px) {
+  html {
+    font-size: 12px;
+  }
 }

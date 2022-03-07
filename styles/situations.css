@@ -1,56 +1,57 @@
 .situations {
   display: flex;
   margin: auto;
-  max-width: 1280px;
-  padding-top: 101px;
-  min-height: 650px;
+  max-width: 80rem;
+  padding-top: 6.25rem;
+  padding-bottom: 4.75rem;
+  min-height: 6.25rem;
 }
 
 .left-sidebar {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 630px;
+  max-width: 39.375rem;
   align-items: flex-end;
-  padding-left: 144px;
+  padding-left: 9rem;
 }
 .left-sidebar img {
-  max-width: 486px;
-  max-height: 290px;
+  max-width: 30.375rem;
+  max-height: 18.125rem;
 }
 .left-sidebar__subtitle {
-  margin-top: 54px;
-  font-size: 18px;
+  margin-top: 3.375rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: 0em;
   text-align: left;
-  max-width: 486px;
-  padding: 0px 80px 0px 10px;
+  max-width: 30.375rem;
+  padding: 0rem 5rem 0rem 0.625rem;
 }
 
 .right-sidebar {
   position: relative;
-  padding: 88px 64px 0px 119px;
-  max-width: 650px;
+  padding: 5.5rem 4rem 0rem 7.4375rem;
+  max-width: 40.625rem;
   display: flex;
   flex-direction: column;
 }
 .nums {
   display: flex;
   align-items: center;
-  gap: 44px;
-  font-size: 14px;
+  gap: 2.75rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25rem;
   letter-spacing: 0em;
   text-align: left;
 }
 
 .nums img {
-  max-width: 120px;
+  max-width: 7.5rem;
 }
 
 .note {
@@ -59,36 +60,36 @@
   align-items: center;
   justify-content: center;
   color: white;
-  width: 131px;
-  height: 40px;
+  width: 8.1875rem;
+  height: 2.5rem;
   background: url(../img/situations/label.svg);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 1.3125rem;
   letter-spacing: 0em;
 }
 
 .left-sidebar .note {
-  top: 20px;
-  left: 55px;
+  top: 1.25rem;
+  left: 3.4375rem;
 }
 
 .right-sidebar .note {
-  top: 20px;
+  top: 1.25rem;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .left-sidebar img {
-    max-width: 316px;
-    max-height: 290px;
+    max-width: 19.75rem;
+    max-height: 18.125rem;
   }
   .left-sidebar__subtitle {
-    max-width: 316px;
-    padding: 0px;
+    max-width: 19.75rem;
+    padding: 0rem;
   }
   .nums img {
-    max-width: 80px;
+    max-width: 5rem;
   }
 }
 
@@ -100,28 +101,28 @@
     margin: auto;
   }
   .left-sidebar img {
-    max-width: 568px;
+    max-width: 35.5rem;
   }
   .left-sidebar__subtitle {
-    max-width: 568px;
+    max-width: 35.5rem;
     padding: 0px;
   }
   .situations {
     flex-direction: column;
   }
   .right-sidebar .note {
-    left: 55px;
+    left: 3.4375rem;
   }
 }
 
 @media screen and (max-width: 769px) {
   .left-sidebar img {
-    max-width: 316px;
-    max-height: 290px;
+    max-width: 22.5714rem;
+    max-height: 220.7143rem;
   }
   .left-sidebar__subtitle {
-    max-width: 316px;
-    padding: 0px;
+    max-width: 22.5714rem;
+    padding: 0rem;
   }
 
   .left-sidebar .note {
@@ -131,30 +132,30 @@
     left: 0;
   }
   .right-sidebar {
-    padding: 88px 0px 0px 49px;
-    max-width: 460px;
+    padding: 6.2857rem 0rem 0rem 3.5rem;
+    max-width: 32.8571rem;
   }
   .nums img {
-    max-width: 80px;
+    max-width: 5.7143rem;
   }
 }
 
 @media screen and (max-width: 481px) {
   .left-sidebar img {
-    max-width: 296px;
+    max-width: 24.6667rem;
   }
   .left-sidebar__subtitle {
-    max-width: 296px;
-    padding: 0px;
+    max-width: 24.6667rem;
+    padding: 0rem;
   }
   .left-sidebar {
-    padding-left: 10px;
+    padding-left: 0.8333rem;
   }
   .right-sidebar {
-    padding: 88px 0px 0px 0px;
-    width: 296px;
+    padding: 88px 0rem 0rem 0rem;
+    width: 24.6667rem;
   }
   .nums img {
-    max-width: 60px;
+    max-width: 5rem;
   }
 }
