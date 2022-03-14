@@ -1,5 +1,7 @@
 .situations {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: auto;
   max-width: 80rem;
   padding-top: 6.25rem;
@@ -37,6 +39,10 @@
   max-width: 40.625rem;
   display: flex;
   flex-direction: column;
+}
+
+.right-sidebar h3 {
+  text-align: center;
 }
 .nums {
   display: flex;
@@ -77,42 +83,6 @@
 
 .right-sidebar .note {
   top: 1.25rem;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .left-sidebar img {
-    max-width: 19.75rem;
-    max-height: 18.125rem;
-  }
-  .left-sidebar__subtitle {
-    max-width: 19.75rem;
-    padding: 0rem;
-  }
-  .nums img {
-    max-width: 5rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .left-sidebar {
-    margin: auto;
-  }
-  .right-sidebar {
-    margin: auto;
-  }
-  .left-sidebar img {
-    max-width: 35.5rem;
-  }
-  .left-sidebar__subtitle {
-    max-width: 35.5rem;
-    padding: 0px;
-  }
-  .situations {
-    flex-direction: column;
-  }
-  .right-sidebar .note {
-    left: 3.4375rem;
-  }
 }
 
 @media screen and (max-width: 769px) {

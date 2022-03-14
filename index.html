@@ -13,95 +13,365 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="situations">
-      <div class="situations__left-sidebar left-sidebar">
-        <div class="note">Ситуация</div>
-        <img src="img/situations/photo.png" />
-        <p class="left-sidebar__subtitle">
-          Вы тратите много сил и денег на маркетинг и рекламу своих товаров.
-          Самые эффективные из каналов — дорогие и требуют большой работы.
-        </p>
+    <header class="container">
+      <nav class="nav">
+        <a href="" class="nav__logo">Проводник</a>
+        <div class="nav__elements">
+          <a class="nav__link" href="#">Услуги</a>
+          <a class="nav__link" href="#">Цены</a>
+          <a class="nav__link" href="#">Как это работает</a>
+          <a class="nav__link" href="#">Блог</a>
+          <a class="nav__link" href="#">О компании</a>
+          <a class="nav__link" href="#">Производителям</a>
+          <a class="nav__link" href="#">Проекты</a>
+          <a class="nav__link" href="#">Контакты</a>
+        </div>
+      </nav>
+      <div class="nav__additional">
+        <a class="nav__elem addres" href="#">
+          <img class="nav__img" src="./img/location.svg" alt="" /> г. Москва,
+          ул. Улица, 20 с. 1
+        </a>
+        <div class="nav__elem phone">
+          <img class="nav__img" src="./img/phone.svg" alt="" />
+          <a class="number" href="tel:+71231231288">
+            8(123) 123-12-88
+            <br
+          /></a>
+          <a class="mail" href="#">info@provodnik.ru</a>
+        </div>
+        <button class="nav__elem btn small-btn" href="#">
+          Обратный звонок
+        </button>
       </div>
-      <div class="situations__right-sidebar right-sidebar">
-        <div class="note">Решение</div>
-        <h3>Точнее, их два.</h3>
-        <div class="nums">
-          <img src="img/situations/num1.svg" />
-          <p>
-            Сотрудничать с существующим магазином на AliExpress и избавить себя
-            от забот вроде вопросов колл-центра, хранения и доставки. И опять же
-            – не тратиться на маркетинг.
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="main">
+          <div class="main__text">зайди на</div>
+          <div class="main__img">
+            <img src="img/main/aliexpress.svg" alt="" />
+          </div>
+          <div class="main__subtitle">
+            Лучшее решение для небольших<br />
+            интернет-магазинов и производителей
+          </div>
+          <button class="btn big-btn">Хочу на AliExpress</button>
+
+          <div class="main__girl">
+            <img src="img/main/devushka.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="situations">
+        <div class="situations__left-sidebar left-sidebar">
+          <div class="note">Ситуация</div>
+          <img src="img/situations/photo.png" />
+          <p class="left-sidebar__subtitle">
+            Вы тратите много сил и денег на маркетинг и рекламу своих товаров.
+            Самые эффективные из каналов — дорогие и требуют большой работы.
           </p>
         </div>
-        <div class="nums">
-          <img src="img/situations/num2.svg" />
-          <p>
-            Cоздать магазин на маркетплейсе AliExpress и реализовывать товары
-            покупателям со всего мира. Один емкий и грамотный канал продаж
-            заменит все рекламные инструменты, которыми вы пользовались до
-            этого.
-          </p>
-        </div>
-      </div>
-    </div>
-    <section class="getting">
-      <img class="getting__decorated" src="./img/getting/tel.png" />
-      <div class="content">
-        <h2>
-          Что вы получите с магазином<br />
-          на AliExpress?
-        </h2>
-        <div class="getters">
-          <div class="getters__item">
-            <i class="icon-icon2"></i>
-            <p>Снизите операционные расходы и расходы на маркетинг.</p>
-          </div>
-          <div class="getters__item">
-            <i class="icon-icon1"></i>
-            <p>Трафик из очень активных покупателей из регионов.</p>
-          </div>
-          <div class="getters__item">
-            <i class="icon-icon3"></i>
-            <p>Сможете реализовывать продукцию в очень больших объемах.</p>
-          </div>
-          <div class="getters__item">
-            <i class="icon-icon4"></i>
+        <div class="situations__right-sidebar right-sidebar">
+          <div class="note">Решение</div>
+          <h3>Точнее, их два.</h3>
+          <div class="nums">
+            <img src="img/situations/num1.svg" />
             <p>
-              В 2020 году еще увеличите продажи за счет покупателей из стран
-              СНГ.
+              Сотрудничать с существующим магазином на AliExpress и избавить
+              себя от забот вроде вопросов колл-центра, хранения и доставки. И
+              опять же – не тратиться на маркетинг.
+            </p>
+          </div>
+          <div class="nums">
+            <img src="img/situations/num2.svg" />
+            <p>
+              Cоздать магазин на маркетплейсе AliExpress и реализовывать товары
+              покупателям со всего мира. Один емкий и грамотный канал продаж
+              заменит все рекламные инструменты, которыми вы пользовались до
+              этого.
             </p>
           </div>
         </div>
-        <div class="button">
-          <a href="">Скачать предложение</a>
-        </div>
       </div>
-    </section>
-    <section class="starting">
-      <div class="content">
-        <h2>Как начать?</h2>
-        <div class="starters">
-          <div class="starters__item">
+      <section class="getting">
+        <img class="getting__decorated" src="./img/getting/tel.png" />
+        <div class="content">
+          <h2>
+            Что вы получите с магазином<br />
+            на AliExpress?
+          </h2>
+          <div class="getters">
+            <div class="getters__item">
+              <i class="icon-icon2"></i>
+              <p>Снизите операционные расходы и расходы на маркетинг.</p>
+            </div>
+            <div class="getters__item">
+              <i class="icon-icon1"></i>
+              <p>Трафик из очень активных покупателей из регионов.</p>
+            </div>
+            <div class="getters__item">
+              <i class="icon-icon3"></i>
+              <p>Сможете реализовывать продукцию в очень больших объемах.</p>
+            </div>
+            <div class="getters__item">
+              <i class="icon-icon4"></i>
+              <p>
+                В 2020 году еще увеличите продажи за счет покупателей из стран
+                СНГ.
+              </p>
+            </div>
+          </div>
+          <div class="button">
+            <a href="">Скачать предложение</a>
+          </div>
+        </div>
+      </section>
+      <section class="starting">
+        <div class="content">
+          <h2>Как начать?</h2>
+          <div class="starters">
+            <div class="starters__item">
+              <div class="circle">1</div>
+              <div class="text">Заполните форму.</div>
+              <img class="arrow" src="img/starting/arrow.svg" alt="" />
+            </div>
+            <div class="starters__item">
+              <div class="circle">2</div>
+              <div class="text">Обсудим ваши задачи с менеджером.</div>
+              <img class="arrow" src="img/starting/arrow.svg" alt="" />
+            </div>
+            <div class="starters__item">
+              <div class="circle">3</div>
+              <div class="text">Сформируем пакет услуг.</div>
+              <img class="arrow" src="img/starting/arrow.svg" alt="" />
+            </div>
+            <div class="starters__item">
+              <div class="circle">4</div>
+              <div class="text">Заключим договор.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="self-entry container">
+        <div class="self-entry__title title">
+          Почему выходить на AliExpress самостоятельно сложно?
+        </div>
+
+        <div class="self-entry__wrapper">
+          <div class="self-entry__left">
+            <button class="self-entry__bookmark">Самостоятельно</button>
+
+            <ul class="self-entry__list">
+              <li class="self-entry__li">
+                Китайская площадка со сложными правилами и формулами.
+              </li>
+              <li class="self-entry__li">
+                Ограниченные возможности без статуса технического партнера.
+              </li>
+              <li class="self-entry__li">
+                Очень тяжело добиться высокого рейтинга магазинов и товаров –
+                <br />
+                <span class="self-entry__span"
+                  >главного фактора в выдаче по запросу.</span
+                >
+              </li>
+            </ul>
+
+            <img class="self-entry__img" src="./img/self-entry/pc.jpg" alt="" />
+          </div>
+
+          <div class="self-entry__right">
+            <button class="big-bookmark">
+              С техническим партнером Content Hub
+            </button>
+
+            <ul class="self-entry__targets">
+              <li class="self-entry__item">
+                <img
+                  class="self-entry__target"
+                  src="./img/self-entry/target.svg"
+                  alt=""
+                />
+                Берем заключение договора на себя.
+              </li>
+              <li class="self-entry__item">
+                <img
+                  class="self-entry__target"
+                  src="./img/self-entry/target.svg"
+                  alt=""
+                />Помогаем с описанием товаров.
+              </li>
+              <li class="self-entry__item">
+                <img
+                  class="self-entry__target"
+                  src="./img/self-entry/target.svg"
+                  alt=""
+                />Брендируем магазин.
+              </li>
+              <li class="self-entry__item">
+                <img
+                  class="self-entry__target"
+                  src="./img/self-entry/target.svg"
+                  alt=""
+                />Создаем аккаунт.
+              </li>
+              <li class="self-entry__item">
+                <img
+                  class="self-entry__target"
+                  src="./img/self-entry/target.svg"
+                  alt=""
+                />Коннектим магазин с вашей CRM.
+              </li>
+            </ul>
+
+            <div class="self-entry__tagline">
+              <img
+                class="self-entry__laptop"
+                src="./img/self-entry/vverx.svg"
+                alt=""
+              />
+              <div class="self-entry__text">
+                И главное — продвигаем в рейтинге на первые позиции в выдаче.
+              </div>
+            </div>
+
+            <button class="self-entry__btn">Написать нам</button>
+          </div>
+        </div>
+
+        <div class="purpule-wrapper">
+          <div class="content">
+            <div class="purpule-wrapper__title title">
+              Кому интересно на AliExpress с Проводником?
+            </div>
+            <div class="purpule-wrapper__list">
+              <div class="purpule-wrapper__item">
+                <div class="purpule-wrapper__border">
+                  <img
+                    class="purpule-wrapper__img"
+                    src="./img/self-entry/shop.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="purpule-wrapper__text">
+                  <div class="purpule-wrapper__suptitle">
+                    Небольшим интернет-магазинам
+                  </div>
+
+                  <div class="purpule-wrapper__subtitle">
+                    С ограниченными ресурсами и бюджетом на рекламу.
+                  </div>
+                </div>
+              </div>
+
+              <div class="purpule-wrapper__item">
+                <div class="purpule-wrapper__border">
+                  <img
+                    class="purpule-wrapper__img"
+                    src="./img/self-entry/factory.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="purpule-wrapper__text">
+                  <div class="purpule-wrapper__suptitle">
+                    Небольшим интернет-магазинам
+                  </div>
+
+                  <div class="purpule-wrapper__subtitle">
+                    Готовы поставлять товар реселлеру и не хотят заниматься
+                    продвижением товаров конечному покупателю.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="organization">
+      <div class="org-container">
+        <h2>Как организован процесс?</h2>
+        <div class="mishen">
+          <div class="processes__item">
+            <p>
+              Проводник ищет магазины и производителей и заводит их на
+              маркетплейс.
+            </p>
             <div class="circle">1</div>
-            <div class="text">Заполните форму.</div>
-            <img class="arrow" src="img/starting/arrow.svg" alt="" />
           </div>
-          <div class="starters__item">
+          <div class="processes__item">
+            <p>
+              Представляет интересы мерчантов и коммуницирует с площадкой по
+              всем установочным вопросам.
+            </p>
             <div class="circle">2</div>
-            <div class="text">Обсудим ваши задачи с менеджером.</div>
-            <img class="arrow" src="img/starting/arrow.svg" alt="" />
           </div>
-          <div class="starters__item">
+          <div class="processes__item">
             <div class="circle">3</div>
-            <div class="text">Сформируем пакет услуг.</div>
-            <img class="arrow" src="img/starting/arrow.svg" alt="" />
+            <p>
+              Ищет партнеров-реселлеров при необходимости и помогает наладить
+              взаимодействие.
+            </p>
           </div>
-          <div class="starters__item">
+          <div class="processes__item">
             <div class="circle">4</div>
-            <div class="text">Заключим договор.</div>
+            <p>
+              Уже освоил алгоритм продвижения магазина и готов его применить для
+              вашей раскрутки на маркетплейсе.
+            </p>
           </div>
+          <img src="img/organization/chels misheniu.png" />
         </div>
       </div>
-    </section>
+    </div>
+    <footer class="footer-content">
+      <div class="container">
+        <nav class="nav nav-footer">
+          <a href="" class="nav__logo nav__logo-footer">Проводник</a>
+          <div class="nav__elements">
+            <a class="nav__link" href="#">Услуги</a>
+            <a class="nav__link" href="#">Цены</a>
+            <a class="nav__link" href="#">Как это работает</a>
+            <a class="nav__link" href="#">Блог</a>
+            <a class="nav__link" href="#">О компании</a>
+            <a class="nav__link" href="#">Производителям</a>
+            <a class="nav__link" href="#">Проекты</a>
+            <a class="nav__link" href="#">Контакты</a>
+          </div>
+        </nav>
+        <div class="nav__footer">
+          <div class="nav__item rights" href="#">
+            <img class="nav__img" src="./img/footer/©.svg" alt="" />
+            <div class="nav__year">2018. <br /></div>
+            <div class="nav__text">Все права защищены.</div>
+          </div>
+
+          <a class="nav__item addres" href="#">
+            <img class="nav__img" src="./img/location.svg" alt="" /> г. Москва,
+            ул. Улица, 20 с. 1
+          </a>
+
+          <div class="nav__item phone">
+            <img class="nav__img" src="./img/phone.svg" alt="" />
+            <a class="number" href="tel:+71231231288">
+              8(123) 123-12-88
+              <br
+            /></a>
+            <a class="mail" href="#">info@provodnik.ru</a>
+          </div>
+          <a class="nav__item" href="#">
+            <img src="./img/footer/facebook.svg" alt="" />
+          </a>
+          <button class="nav__elem btn small-btn" href="#">
+            Обратный звонок
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,132 @@
+.org-container {
+  position: relative;
+  max-width: 1280px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 70px 53px 0px 53px;
+}
+.org-container h2 {
+  font-style: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  margin-bottom: 54px;
+}
+
+.mishen {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 30%;
+  max-width: 40%;
+}
+
+.mishen img {
+  width: 100%;
+}
+
+.processes__item .circle {
+  color: white;
+}
+
+.processes__item {
+  position: absolute;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  width: 32vw;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.processes__item:nth-child(2) {
+  top: 17.4%;
+  right: 87%;
+  text-align: right;
+}
+.processes__item:nth-child(1) {
+  top: 56.6%;
+  right: 90%;
+  text-align: right;
+}
+
+.processes__item:nth-child(3) {
+  top: -3%;
+  left: 61%;
+  text-align: left;
+}
+
+.processes__item:nth-child(4) {
+  top: 40%;
+  left: 93%;
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .mishen {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    left: 0;
+  }
+  .mishen img {
+    display: none;
+  }
+
+  .processes__item {
+    position: relative;
+    width: 402px;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  .org-container {
+    min-height: 0;
+  }
+
+  .processes__item:nth-child(1) {
+    left: 0;
+    text-align: left;
+  }
+  .processes__item:nth-child(1) .circle {
+    order: 1;
+  }
+  .processes__item:nth-child(1) p {
+    order: 2;
+  }
+
+  .processes__item:nth-child(2) {
+    left: 0;
+    text-align: left;
+  }
+
+  .processes__item:nth-child(2) .circle {
+    order: 1;
+  }
+  .processes__item:nth-child(2) p {
+    order: 2;
+  }
+
+  .processes__item:nth-child(3) {
+    text-align: left;
+    left: 0;
+  }
+
+  .processes__item:nth-child(4) {
+    text-align: left;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .org-container {
+    padding: 70px 13px 0px 13px;
+  }
+}

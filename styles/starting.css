@@ -1,10 +1,15 @@
 .starting {
-  padding: 3.0625rem 0px 5.4375rem 0px;
+  padding: 3.0625rem 0px 0px 0px;
   background-color: #651fff;
 }
 
+.starting h2 {
+  margin-bottom: 60px;
+}
 .starters {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2.375rem;
 }
 
@@ -19,6 +24,7 @@
   align-items: center;
   justify-content: center;
   min-width: 62px;
+  max-width: 62px;
   min-height: 62px;
   background: url(../img/starting/circle.svg);
   font-family: "Roboto Condensed";
@@ -30,25 +36,12 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .arrow {
     display: none;
   }
-  .starters {
-    flex-wrap: wrap;
-    gap: 0px;
-  }
   .starters__item {
-    margin-top: 2.375rem;
-    width: 50%;
-  }
-  .starting {
-    padding-left: 8.75rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .starters__item {
+    padding-left: 2rem;
     margin-top: 2.7143rem;
     width: 100%;
   }
