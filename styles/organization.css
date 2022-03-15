@@ -1,8 +1,10 @@
 .org-container {
+  z-index: 1;
   position: relative;
   max-width: 1280px;
   min-height: 720px;
   margin: 0 auto;
+  margin-top: 101px;
   padding: 70px 53px 0px 53px;
 }
 .org-container h2 {
@@ -11,7 +13,10 @@
   font-weight: bold;
   margin-bottom: 54px;
 }
-
+.organization {
+  z-index: -10;
+  background-color: #f5f5f5;
+}
 .mishen {
   position: absolute;
   z-index: -1;
@@ -26,6 +31,7 @@
 
 .processes__item .circle {
   color: white;
+  background: url(../img/organization/circle.svg);
 }
 
 .processes__item {

@@ -1,0 +1,162 @@
+.achievements {
+  margin-top: 71px;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 40%;
+}
+
+.achievements__title {
+  margin-bottom: 7.7rem;
+}
+
+.bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/achievements/Group.svg) repeat-y;
+  max-width: 97px;
+  width: 100%;
+  min-height: 40px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.section-logo {
+  background: url(../img/achievements/h_m.svg) no-repeat;
+  min-width: 20%;
+  height: 60px;
+}
+
+.content__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.achievements__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.4rem 5rem 3rem 5rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #fff;
+}
+
+.article-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.article-text {
+  line-height: 24px;
+  width: 85%;
+  margin-bottom: 4.2rem;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.statistics__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.marker {
+  background: url(../img/achievements/marker.svg) no-repeat;
+  height: 34px;
+  min-width: 34px;
+  margin-right: 1rem;
+}
+
+.statistics__number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.statistics-text {
+  font-weight: 500;
+  max-width: 30%;
+  margin-right: 2rem;
+}
+
+.decoration-package {
+  position: absolute;
+  background: url(../img/achievements/paket_mish.svg) no-repeat;
+  height: 478px;
+  width: 383px;
+  z-index: -1000;
+  top: 2%;
+  right: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    /* font-size: 14px; */
+  }
+
+  .achievements .container .achievements__content {
+    padding: 1.7rem 1rem 1.5rem 1rem;
+  }
+
+  .statistics__number {
+    font-size: 2rem;
+  }
+
+  .article-text {
+    width: 100%;
+  }
+
+  .container {
+    padding: 2.2rem 1rem 1rem 1.5rem;
+  }
+
+  .decoration-package {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    /* font-size: 12px; */
+  }
+
+  .section-logo {
+    display: none;
+  }
+
+  .marker {
+    display: none;
+  }
+
+  .section-title {
+    width: 100%;
+  }
+
+  .achievements__title {
+    margin-bottom: 3rem;
+  }
+}

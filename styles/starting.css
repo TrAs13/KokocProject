@@ -9,7 +9,7 @@
 .starters {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 2.375rem;
 }
 
@@ -36,6 +36,11 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .starters {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 768px) {
   .arrow {
     display: none;

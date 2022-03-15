@@ -1,14 +1,14 @@
 .getting {
-  position: relative;
   width: 100%;
   min-height: 45rem;
   background-color: #7224ea;
-  padding: 4.375rem 0rem 5rem 0rem;
+  padding: 4.325rem 0rem 0rem 0rem;
   z-index: 1000;
   overflow-x: hidden;
 }
 .content {
   margin: auto;
+  position: relative;
   max-width: 73.125rem;
   color: white;
 }
@@ -59,34 +59,26 @@
   text-align: left;
 }
 
-.button {
-  margin-top: 3.875rem;
-  background: url(../img/getting/Rectangle.svg);
-  width: 316px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
+.getting__btn {
+  margin-top: 62px;
+  background-color: #ff5900;
 }
 
-.button a {
-  color: white;
-  text-decoration: none;
-  font-family: "Roboto Condensed";
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.75rem;
-  letter-spacing: 0em;
-  text-align: center;
+.getting .btn-buy--write:before {
+  border-left: 10px solid #ff5900;
 }
+
+.getting .btn-buy--write:hover:before {
+  border-left: 10px solid #e43225;
+  transition: 0;
+}
+
 .getting__decorated {
   max-width: 48.8125rem;
   position: absolute;
   bottom: 0;
-  right: 8%;
-  z-index: -10;
+  right: -19%;
+  z-index: 0;
 }
 
 @media screen and (max-width: 769px) {

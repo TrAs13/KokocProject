@@ -1,18 +1,22 @@
 @import url("styles/header.css");
+@import url("styles/btns.css");
 @import url("styles/situations.css");
 @import url("styles/starting.css");
 @import url("styles/fontello.css");
 @import url("styles/getting.css");
 @import url("styles/self-entry.css");
 @import url("styles/organization.css");
+@import url("styles/feedback.css");
+@import url("styles/achievements.css");
 @import url("styles/footer.css");
+@import url("styles/modal.css");
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html {
   font-family: "Roboto";
   font-size: 16px;
 }
 body {
-  background: url(./img/fon.png) no-repeat;
   background-size: 1920px 720px;
   background-position: 50% 0;
 }
@@ -26,6 +30,7 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 0;
   scroll-behavior: smooth;
 }
 
@@ -33,6 +38,7 @@ a {
   width: 100%;
   max-width: 73.125rem;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 @media screen and (max-width: 769px) {

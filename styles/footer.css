@@ -2,22 +2,22 @@
 
 .footer-content {
   background-color: #f5f5f5;
-  padding-top: 42px;
+  padding-top: 2.625rem;
 }
 
-.nav-footer {
-  padding-bottom: 100px;
+.footer-content__nav {
+  padding-bottom: 6.25rem;
 }
 
 .nav__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 58px;
+  padding-bottom: 3.625rem;
 }
 
 .nav__logo-footer {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .nav__year {
@@ -25,5 +25,20 @@
 }
 
 .nav__text {
-  padding-left: 38px;
+  padding-left: 2.375rem;
+}
+
+.nav__elements--footer {
+  padding-top: 0.4rem;
+}
+
+.nav__additional--footer {
+  padding-bottom: 3.625rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content__nav {
+    padding-bottom: 3rem;
+  }
 }

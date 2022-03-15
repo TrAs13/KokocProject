@@ -1,0 +1,70 @@
+.btn-buy {
+  font-family: "Roboto Condensed";
+  display: block;
+  color: #fff;
+  border-radius: 6px;
+  background: #000;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: 0s;
+  z-index: 100;
+}
+
+.btn-buy:hover {
+  background: #e43225;
+  transition: 0s;
+}
+
+.btn-buy--small:before {
+  left: 99.2%;
+  top: 4.8%;
+  border-top: 18px solid transparent;
+  border-left: 10px solid #000;
+  border-bottom: 18px solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  transition: 0;
+}
+
+.btn-buy--big:before {
+  left: 99.6%;
+  top: 4%;
+  border-top: 28px solid transparent;
+  border-left: 15px solid #000;
+  border-bottom: 28px solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  z-index: 100;
+  position: absolute;
+}
+.btn-buy--small {
+  width: 178px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btn-buy--small:hover:before {
+  border-left: 10px solid #e43225;
+  transition: 0;
+}
+
+.btn-buy--big:hover:before {
+  border-left: 15px solid #e43225;
+  transition: 0;
+}
+
+.btn-buy--write:hover:before {
+  border-left: 15px solid #e43225;
+  transition: 0;
+}
+.btn-buy--big {
+  width: 255px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+}
