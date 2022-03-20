@@ -14,6 +14,11 @@
   padding-top: 0.75rem;
 }
 
+.wrapper__elem i {
+  font-size: 18px;
+  margin-right: 14px;
+}
+
 .nav__link:last-child {
   margin-right: 0;
 }
@@ -56,7 +61,7 @@
   width: 100%;
 }
 
-.nav__additional {
+.wrapper__additional {
   z-index: 998;
   display: flex;
   align-items: flex-start;
@@ -68,11 +73,11 @@
   display: flex;
   justify-content: flex-end;
 }
-.nav__elem {
+.wrapper__elem {
   align-items: center;
 }
 
-.nav__elem:last-child {
+.wrapper__elem:last-child {
   margin-right: 0;
 }
 
@@ -129,14 +134,14 @@
     justify-content: center;
   }
 
-  .nav__additional {
+  .wrapper__additional {
     align-items: flex-start;
     justify-content: space-around;
     margin-bottom: 2rem;
     flex-wrap: wrap;
   }
 
-  .nav__elem {
+  .wrapper__elem {
     margin-bottom: 1rem;
   }
 

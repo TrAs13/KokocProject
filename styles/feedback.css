@@ -55,12 +55,19 @@
   background-repeat: no-repeat;
   background-position-x: 96%;
   background-position-y: 50%;
+  background-image: url("../img/feedback/arrow_drop_down_24px.svg");
+}
+
+.feedback-form {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding: 3rem 0 4rem 4.25rem;
 }
 
 .select:focus {
   border-color: #651fff;
+  background-image: url("../img/feedback/arrow_drop_up_24px.svg");
 }
-
 .select:focus + .form__label {
   color: #651fff;
 }
@@ -168,6 +175,10 @@
   }
 
   .feedback__form {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  .feedback-form {
     margin: 0 auto;
     padding: 2rem 1rem;
   }

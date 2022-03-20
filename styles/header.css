@@ -2,6 +2,7 @@
 @import url("header-main.css");
 
 .main-screen {
+  overflow: hidden;
   background: url(../img/fon.png) no-repeat;
   background-position: 50% 0;
   background-size: cover;

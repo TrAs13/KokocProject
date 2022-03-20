@@ -7,13 +7,13 @@
   border: none;
   position: relative;
   cursor: pointer;
-  transition: 0s;
+  transition: 0.5s;
   z-index: 100;
 }
 
 .btn-buy:hover {
   background: #e43225;
-  transition: 0s;
+  transition: 0.5s;
 }
 
 .btn-buy--small:before {
@@ -26,7 +26,7 @@
   height: 0;
   width: 0;
   position: absolute;
-  transition: 0;
+  transition: 0.5s;
 }
 
 .btn-buy--big:before {
@@ -40,6 +40,7 @@
   width: 0;
   z-index: 100;
   position: absolute;
+  transition: 0.5s;
 }
 .btn-buy--small {
   width: 178px;
@@ -50,17 +51,21 @@
 
 .btn-buy--small:hover:before {
   border-left: 10px solid #e43225;
-  transition: 0;
+  transition: 0.5s;
 }
 
 .btn-buy--big:hover:before {
   border-left: 15px solid #e43225;
-  transition: 0;
+  transition: 0.5s;
 }
 
 .btn-buy--write:hover:before {
   border-left: 15px solid #e43225;
-  transition: 0;
+  transition: 0.5s;
+}
+
+.btn-buy--write:before {
+  transition: 0.5s;
 }
 .btn-buy--big {
   width: 255px;

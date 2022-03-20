@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>ali</title>
+    <title>AliExpress</title>
   </head>
   <body>
     <div class="main-screen">
@@ -31,13 +31,12 @@
           </div>
         </nav>
         <div class="wrapper">
-          <div class="nav__additional">
-            <a class="nav__elem addres" href="#">
-              <img class="nav__img" src="img/location.svg" alt="" /> г. Москва,
-              ул. Улица, 20 с. 1
+          <div class="wrapper__additional">
+            <a class="wrapper__elem addres" href="#">
+              <i class="icon-location"></i> г. Москва, ул. Улица, 20 с. 1
             </a>
-            <div class="nav__elem phone">
-              <img class="nav__img" src="img/phone.svg" alt="" />
+            <div class="wrapper__elem phone">
+              <i class="icon-phone"></i>
               <a class="number" href="tel:+71231231288">
                 8(123) 123-12-88
                 <br
@@ -46,7 +45,7 @@
             </div>
             <button
               onclick="location.href='#openModal'; document.body.style.overflow = 'hidden';"
-              class="nav__elem btn-buy btn-buy--small"
+              class="wrapper__elem btn-buy btn-buy--small"
             >
               Обратный звонок
             </button>
@@ -72,21 +71,22 @@
         </div>
       </div>
     </div>
+
     <main>
       <div class="situations">
         <div class="situations__left-sidebar left-sidebar">
-          <div class="note">Ситуация</div>
-          <img src="img/situations/photo.png" />
+          <div class="note anim-bookmark">Ситуация</div>
+          <img src="img/situations/photo.png" alt="" />
           <p class="left-sidebar__subtitle">
             Вы тратите много сил и денег на маркетинг и рекламу своих товаров.
             Самые эффективные из каналов — дорогие и требуют большой работы.
           </p>
         </div>
         <div class="situations__right-sidebar right-sidebar">
-          <div class="note">Решение</div>
+          <div class="note anim-bookmark">Решение</div>
           <h3>Точнее, их два.</h3>
           <div class="nums">
-            <img src="img/situations/num1.svg" />
+            <img src="img/situations/num1.svg" alt="" />
             <p>
               Сотрудничать с существующим магазином на AliExpress и избавить
               себя от забот вроде вопросов колл-центра, хранения и доставки. И
@@ -94,7 +94,7 @@
             </p>
           </div>
           <div class="nums">
-            <img src="img/situations/num2.svg" />
+            <img src="img/situations/num2.svg" alt="" />
             <p>
               Cоздать магазин на маркетплейсе AliExpress и реализовывать товары
               покупателям со всего мира. Один емкий и грамотный канал продаж
@@ -107,7 +107,7 @@
 
       <section class="getting">
         <div class="content">
-          <img class="getting__decorated" src="img/getting/tel.png" />
+          <img class="getting__decorated" src="img/getting/tel.png" alt="" />
           <h2>
             Что вы получите с магазином<br />
             на AliExpress?
@@ -140,14 +140,16 @@
       </section>
 
       <section class="singly-guide">
-        <div class="singly-guide__title title">
+        <h2 class="singly-guide__title title">
           Почему выходить на AliExpress самостоятельно сложно?
-        </div>
+        </h2>
 
         <div class="singly-guide__wrapper">
           <div class="singly-guide__left">
             <div class="singly-guide__left-content">
-              <button class="singly-guide__bookmark">Самостоятельно</button>
+              <button class="singly-guide__bookmark anim-bookmark">
+                Самостоятельно
+              </button>
 
               <ul class="singly-guide__list">
                 <li class="singly-guide__li">
@@ -174,7 +176,7 @@
           </div>
 
           <div class="singly-guide__right">
-            <button class="big-bookmark">
+            <button class="big-bookmark anim-bookmark">
               С техническим партнером Content Hub
             </button>
 
@@ -242,11 +244,7 @@
             <div class="singly-guide-wrap__list">
               <div class="singly-guide-wrap__item">
                 <div class="singly-guide-wrap__border">
-                  <img
-                    class="singly-guide-wrap__img"
-                    src="img/singly-guide/shop.svg"
-                    alt=""
-                  />
+                  <i class="icon-vector"></i>
                 </div>
                 <div class="singly-guide-wrap__text">
                   <div class="singly-guide-wrap__suptitle">
@@ -261,11 +259,7 @@
 
               <div class="singly-guide-wrap__item">
                 <div class="singly-guide-wrap__border">
-                  <img
-                    class="singly-guide-wrap__img"
-                    src="img/singly-guide/factory.svg"
-                    alt=""
-                  />
+                  <i class="icon-zavodik"></i>
                 </div>
                 <div class="singly-guide-wrap__text">
                   <div class="singly-guide-wrap__suptitle">
@@ -286,36 +280,36 @@
       <section class="organization">
         <div class="org-container">
           <h2>Как организован процесс?</h2>
-          <div class="mishen">
+          <div class="mishen processes">
             <div class="processes__item">
               <p>
                 Проводник ищет магазины и производителей и заводит их на
                 маркетплейс.
               </p>
-              <div class="circle">1</div>
+              <div class="circle anim-circle">1</div>
             </div>
             <div class="processes__item">
               <p>
                 Представляет интересы мерчантов и коммуницирует с площадкой по
                 всем установочным вопросам.
               </p>
-              <div class="circle">2</div>
+              <div class="circle anim-circle">2</div>
             </div>
             <div class="processes__item">
-              <div class="circle">3</div>
+              <div class="circle anim-circle">3</div>
               <p>
                 Ищет партнеров-реселлеров при необходимости и помогает наладить
                 взаимодействие.
               </p>
             </div>
             <div class="processes__item">
-              <div class="circle">4</div>
+              <div class="circle anim-circle">4</div>
               <p>
                 Уже освоил алгоритм продвижения магазина и готов его применить
                 для вашей раскрутки на маркетплейсе.
               </p>
             </div>
-            <img src="img/organization/chels misheniu.png" />
+            <img src="img/organization/chelsmisheniu.png" alt="" />
           </div>
         </div>
       </section>
@@ -326,31 +320,127 @@
             Чего добились с Проводником другие магазины?
           </h2>
           <div class="decoration-package"></div>
-          <article class="achievements__content">
-            <div class="section-logo"></div>
-            <div class="content__container">
-              <h3 class="article-title">
-                Продвижение и раскрутка магазина одежды
-              </h3>
-              <p class="article-text">
-                Проводник ищет магазины и производителей и заводит их на
-                маркетплейс. Уже освоил алгоритм продвижения магазина и готов
-                его применить для вашей раскрутки на маркетплейсе.
-              </p>
-              <div class="statistics">
-                <div class="statistics__left">
-                  <div class="marker"></div>
-                  <div class="statistics__number">765 885</div>
-                  <div class="statistics-text">Законченных покупок</div>
-                </div>
-                <div class="statistics__right">
-                  <div class="marker"></div>
-                  <div class="statistics__number">789 654</div>
-                  <div class="statistics-text">Просмотров магазина</div>
+          <div id="slider_bl">
+            <div class="wrapper">
+              <div class="note note-achievements anim-bookmark">
+                Кейс
+              </div>
+              <input checked type="radio" name="slider" id="slide1" />
+              <input type="radio" name="slider" id="slide2" />
+              <input type="radio" name="slider" id="slide3" />
+              <input type="radio" name="slider" id="slide4" />
+              <div class="slider-wrapper">
+                <div class="inner">
+                  <article class="achievements__content">
+                    <div class="section-logo"></div>
+                    <div class="content-container">
+                      <h3 class="article-title">
+                        Продвижение и раскрутка магазина одежды
+                      </h3>
+                      <p class="article-text">
+                        Проводник ищет магазины и производителей и заводит их на
+                        маркетплейс. Уже освоил алгоритм продвижения магазина и
+                        готов его применить для вашей раскрутки на маркетплейсе.
+                      </p>
+                      <div class="statistics">
+                        <div class="statistics__left">
+                          <div class="marker"></div>
+                          <div class="statistics__number">765 885</div>
+                          <div class="statistics-text">Законченных покупок</div>
+                        </div>
+                        <div class="statistics__right">
+                          <div class="marker"></div>
+                          <div class="statistics__number">789 654</div>
+                          <div class="statistics-text">Просмотров магазина</div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="achievements__content">
+                    <div class="section-logo"></div>
+                    <div class="content-container">
+                      <h3 class="article-title">
+                        Продвижение и раскрутка магазина одежды
+                      </h3>
+                      <p class="article-text">
+                        Проводник ищет магазины и производителей и заводит их на
+                        маркетплейс. Уже освоил алгоритм продвижения магазина и
+                        готов его применить для вашей раскрутки на маркетплейсе.
+                      </p>
+                      <div class="statistics">
+                        <div class="statistics__left">
+                          <div class="marker"></div>
+                          <div class="statistics__number">765 885</div>
+                          <div class="statistics-text">Законченных покупок</div>
+                        </div>
+                        <div class="statistics__right">
+                          <div class="marker"></div>
+                          <div class="statistics__number">789 654</div>
+                          <div class="statistics-text">Просмотров магазина</div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="achievements__content">
+                    <div class="section-logo"></div>
+                    <div class="content-container">
+                      <h3 class="article-title">
+                        Продвижение и раскрутка магазина одежды
+                      </h3>
+                      <p class="article-text">
+                        Проводник ищет магазины и производителей и заводит их на
+                        маркетплейс. Уже освоил алгоритм продвижения магазина и
+                        готов его применить для вашей раскрутки на маркетплейсе.
+                      </p>
+                      <div class="statistics">
+                        <div class="statistics__left">
+                          <div class="marker"></div>
+                          <div class="statistics__number">765 885</div>
+                          <div class="statistics-text">Законченных покупок</div>
+                        </div>
+                        <div class="statistics__right">
+                          <div class="marker"></div>
+                          <div class="statistics__number">789 654</div>
+                          <div class="statistics-text">Просмотров магазина</div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="achievements__content">
+                    <div class="section-logo"></div>
+                    <div class="content-container">
+                      <h3 class="article-title">
+                        Продвижение и раскрутка магазина одежды
+                      </h3>
+                      <p class="article-text">
+                        Проводник ищет магазины и производителей и заводит их на
+                        маркетплейс. Уже освоил алгоритм продвижения магазина и
+                        готов его применить для вашей раскрутки на маркетплейсе.
+                      </p>
+                      <div class="statistics">
+                        <div class="statistics__left">
+                          <div class="marker"></div>
+                          <div class="statistics__number">765 885</div>
+                          <div class="statistics-text">Законченных покупок</div>
+                        </div>
+                        <div class="statistics__right">
+                          <div class="marker"></div>
+                          <div class="statistics__number">789 654</div>
+                          <div class="statistics-text">Просмотров магазина</div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
                 </div>
               </div>
+              <div class="slider-dot-control">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+              </div>
             </div>
-          </article>
+          </div>
         </div>
       </section>
 
@@ -359,22 +449,22 @@
           <h2>Как начать?</h2>
           <div class="starters">
             <div class="starters__item">
-              <div class="circle">1</div>
+              <div class="circle anim-circle">1</div>
               <div class="text">Заполните форму.</div>
               <img class="arrow" src="img/starting/arrow.svg" alt="" />
             </div>
             <div class="starters__item">
-              <div class="circle">2</div>
+              <div class="circle anim-circle">2</div>
               <div class="text">Обсудим ваши задачи с менеджером.</div>
               <img class="arrow" src="img/starting/arrow.svg" alt="" />
             </div>
             <div class="starters__item">
-              <div class="circle">3</div>
+              <div class="circle anim-circle">3</div>
               <div class="text">Сформируем пакет услуг.</div>
               <img class="arrow" src="img/starting/arrow.svg" alt="" />
             </div>
             <div class="starters__item">
-              <div class="circle">4</div>
+              <div class="circle anim-circle">4</div>
               <div class="text">Заключим договор.</div>
             </div>
           </div>
@@ -424,9 +514,11 @@
                   <option value="" class="select__option" selected>
                     Выберите род деятельности
                   </option>
-                  <option value="" class="select__option">8:00</option>
-                  <option value="" class="select__option">9:00</option>
-                  <option value="" class="select__option">9:00</option>
+                  <option value="" class="select__option">Покупатель</option>
+                  <option value="" class="select__option">Продавец</option>
+                  <option value="" class="select__option">Магазин</option>
+                  <option value="" class="select__option">Спонсор</option>
+                  <option value="" class="select__option">Рекламодатель</option>
                 </select>
                 <label class="form__label" for="select">Кто вы</label>
               </div>
@@ -456,10 +548,7 @@
                 </p>
                 <a class="form__link" href="#">Политика конфидециальности</a>
               </div>
-              <button
-                class="form__button singly-guide__btn btn-buy btn-buy--write"
-                type="submit"
-              >
+              <button class="form__button btn-buy btn-buy--write" type="submit">
                 Отправить
               </button>
             </div>
@@ -483,39 +572,43 @@
             <a class="nav__link" href="#">Контакты</a>
           </div>
         </nav>
-        <div class="nav__additional nav__additional--footer">
-          <div class="nav__elem rights">
-            <img class="nav__img" src="img/footer/©.svg" alt="" />
-            <div class="nav__year">2018. <br /></div>
-            <div class="nav__text">Все права защищены.</div>
+        <div class="wrapper">
+          <div class="wrapper__additional wrapper__additional--footer">
+            <div class="wrapper__elem rights">
+              <img class="wrapper__img" src="img/footer/©.svg" alt="" />
+              <div class="wrapper__text">
+                <div>2018.</div>
+                <div>Все права защищены.</div>
+              </div>
+            </div>
+
+            <a class="wrapper__elem addres" href="#">
+              <i class="icon-location"></i> г. Москва, ул. Улица, 20 с. 1
+            </a>
+            <div class="wrapper__elem phone">
+              <i class="icon-phone"></i>
+              <a class="number" href="tel:+71231231288">
+                8(123) 123-12-88
+                <br
+              /></a>
+              <a class="mail" href="#">info@provodnik.ru</a>
+            </div>
+
+            <a class="wrapper__elem" href="#">
+              <img src="img/footer/facebook.svg" alt="" />
+            </a>
+
+            <button
+              onclick="location.href='#openModal'; document.body.style.overflow = 'hidden';"
+              class="wrapper__elem btn-buy btn-buy--small"
+            >
+              Обратный звонок
+            </button>
           </div>
-
-          <a class="nav__elem addres" href="#">
-            <img class="nav__img" src="img/location.svg" alt="" /> г. Москва,
-            ул. Улица, 20 с. 1
-          </a>
-          <div class="nav__elem phone">
-            <img class="nav__img" src="img/phone.svg" alt="" />
-            <a class="number" href="tel:+71231231288">
-              8(123) 123-12-88
-              <br
-            /></a>
-            <a class="mail" href="#">info@provodnik.ru</a>
-          </div>
-
-          <a class="nav__elem" href="#">
-            <img src="img/footer/facebook.svg" alt="" />
-          </a>
-
-          <button
-            onclick="location.href='#openModal'; document.body.style.overflow = 'hidden';"
-            class="nav__elem btn-buy btn-buy--small"
-          >
-            Обратный звонок
-          </button>
         </div>
       </div>
     </footer>
+
     <div id="openModal" class="modal">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -530,13 +623,13 @@
             </button>
           </div>
           <div class="modal-body">
-            <form class="form feedback__form" action="index.html" method="post">
+            <form class="form feedback-form" action="index.html" method="post">
               <h2 class="form__header">Пожалуйста, оставьте свои контакты</h2>
               <div class="form__left">
                 <div class="form__container">
                   <input
                     class="form__input"
-                    id="first_name"
+                    id="first_name2"
                     type="text"
                     placeholder="Как к вам обращаться"
                     required
@@ -546,7 +639,7 @@
                 <div class="form__container">
                   <input
                     class="form__input"
-                    id="tel"
+                    id="tel2"
                     type="tel"
                     placeholder="+7(123)12-12-123"
                     required
@@ -556,7 +649,7 @@
                 <div class="form__container">
                   <input
                     class="form__input"
-                    id="email"
+                    id="email2"
                     type="email"
                     placeholder="Нужен для связи"
                     required
@@ -567,18 +660,22 @@
 
               <div class="form__right">
                 <div class="form__container">
-                  <select class="select form__select" id="select" required>
+                  <select class="select form__select" id="select2" required>
                     <option value="" class="select__option" selected>
                       Выберите род деятельности
                     </option>
-                    <option value="" class="select__option">8:00</option>
-                    <option value="" class="select__option">9:00</option>
-                    <option value="" class="select__option">9:00</option>
+                    <option value="" class="select__option">Покупатель</option>
+                    <option value="" class="select__option">Продавец</option>
+                    <option value="" class="select__option">Магазин</option>
+                    <option value="" class="select__option">Спонсор</option>
+                    <option value="" class="select__option"
+                      >Рекламодатель</option
+                    >
                   </select>
                   <label class="form__label" for="select">Кто вы</label>
                 </div>
                 <div class="form__container">
-                  <input class="form__input" id="domen" type="text" />
+                  <input class="form__input" id="domen2" type="text" />
                   <label class="form__label" for="domen"
                     >Домен (если есть)</label
                   >
@@ -586,7 +683,7 @@
                 <div class="form__container">
                   <input
                     class="form__input"
-                    id="input-caption"
+                    id="input-caption2"
                     type="text"
                     placeholder="input caption"
                     required
@@ -606,7 +703,7 @@
                   <a class="form__link" href="#">Политика конфидециальности</a>
                 </div>
                 <button
-                  class="form__button singly-guide__btn btn-buy btn-buy--write"
+                  class="form__button btn-buy btn-buy--write"
                   type="submit"
                 >
                   Отправить
@@ -617,6 +714,7 @@
         </div>
       </div>
     </div>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var scrollbar = document.body.clientWidth - window.innerWidth + "px";

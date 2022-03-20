@@ -5,6 +5,15 @@
   padding-top: 2.625rem;
 }
 
+.footer-content .container .wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-content .container .wrapper {
+  display: block;
+}
+
 .footer-content__nav {
   padding-bottom: 6.25rem;
 }
@@ -20,19 +29,24 @@
   font-size: 2.25rem;
 }
 
-.nav__year {
-  display: inline-block;
-}
-
-.nav__text {
+.wrapper__year {
   padding-left: 2.375rem;
 }
 
+.wrapper__text {
+  display: flex;
+  display: inline-block;
+  flex-direction: column;
+  padding-left: 2.375rem;
+}
+.wrapper {
+  display: flex;
+}
 .nav__elements--footer {
   padding-top: 0.4rem;
 }
 
-.nav__additional--footer {
+.wrapper__additional--footer {
   padding-bottom: 3.625rem;
   margin-bottom: 0;
 }
