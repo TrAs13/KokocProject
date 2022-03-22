@@ -308,6 +308,9 @@
   .singly-guide__right {
     align-items: center;
   }
+  .singly-guide__left-content {
+    max-width: 320px;
+  }
 
   .singly-guide__item {
     width: 244px;
