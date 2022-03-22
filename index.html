@@ -17,17 +17,21 @@
   <body>
     <div class="main-screen">
       <header class="container">
-        <nav class="nav">
+        <nav class="nav hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
           <a href="" class="nav__logo">Проводник</a>
-          <div class="nav__elements">
-            <a class="nav__link" href="#">Услуги</a>
-            <a class="nav__link" href="#">Цены</a>
-            <a class="nav__link" href="#">Как это работает</a>
-            <a class="nav__link" href="#">Блог</a>
-            <a class="nav__link" href="#">О компании</a>
-            <a class="nav__link" href="#">Производителям</a>
-            <a class="nav__link" href="#">Проекты</a>
-            <a class="nav__link" href="#">Контакты</a>
+          <div class="nav__elements menu__box">
+            <a class="nav__link menu__item" href="#">Услуги</a>
+            <a class="nav__link menu__item" href="#">Цены</a>
+            <a class="nav__link menu__item" href="#">Как это работает</a>
+            <a class="nav__link menu__item" href="#">Блог</a>
+            <a class="nav__link menu__item" href="#">О компании</a>
+            <a class="nav__link menu__item" href="#">Производителям</a>
+            <a class="nav__link menu__item" href="#">Проекты</a>
+            <a class="nav__link menu__item" href="#">Контакты</a>
           </div>
         </nav>
         <div class="wrapper">
@@ -41,7 +45,9 @@
                 8(123) 123-12-88
                 <br
               /></a>
-              <a class="mail" href="#">info@provodnik.ru</a>
+              <a class="mail" href="mailto:mr.pimashev58@gmail.com"
+                >info@provodnik.ru</a
+              >
             </div>
             <button
               onclick="location.href='#openModal'; document.body.style.overflow = 'hidden';"
@@ -57,10 +63,10 @@
 
         <img class="main__img" src="img/main/aliexpress.svg" alt="" />
 
-        <div class="main__subtitle">
+        <h1 class="main__subtitle">
           Лучшее решение для небольших<br />
           интернет-магазинов и производителей
-        </div>
+        </h1>
         <button class="btn-buy btn-buy--big">Хочу на AliExpress</button>
 
         <div class="main__girl">
@@ -84,7 +90,7 @@
         </div>
         <div class="situations__right-sidebar right-sidebar">
           <div class="note anim-bookmark">Решение</div>
-          <h3>Точнее, их два.</h3>
+          <div class="sub-title">Точнее, их два.</div>
           <div class="nums">
             <img src="img/situations/num1.svg" alt="" />
             <p>
@@ -591,7 +597,9 @@
                 8(123) 123-12-88
                 <br
               /></a>
-              <a class="mail" href="#">info@provodnik.ru</a>
+              <a class="mail" href="mailto:mr.pimashev58@gmail.com"
+                >info@provodnik.ru</a
+              >
             </div>
 
             <a class="wrapper__elem" href="#">

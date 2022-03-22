@@ -1,39 +1,60 @@
-.anim-circle:hover {
-  animation: 1s linear 0s normal none infinite running rot;
-  -webkit-animation: 1s linear 0s normal none infinite running rot;
-  width: 100px;
-}
-
-.anim-bookmark {
-  transition: 0.4s;
-}
-.anim-bookmark:hover {
-  transition: 0.4s;
-  transform: rotate(10deg);
-}
-
-@keyframes rot {
-  0% {
-    transform: rotate(0deg);
+@media screen and (min-width: 769px) {
+  .nav__link:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e43225;
+    content: "";
+    transition: width 1s ease-out;
   }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes rot {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
-i {
-  transition: 0.4s;
-}
+  .nav__link:hover {
+    color: #e43225;
+  }
 
-i:hover {
-  transition: 0.4s;
-  color: #e43225;
+  .nav__link:hover:after,
+  .nav__link:focus:after {
+    width: 100%;
+  }
+  .anim-circle:hover {
+    animation: 1s linear 0s normal none infinite running rot;
+    -webkit-animation: 1s linear 0s normal none infinite running rot;
+    width: 100px;
+  }
+
+  .anim-bookmark {
+    transition: 0.4s;
+  }
+  .anim-bookmark:hover {
+    transition: 0.4s;
+    transform: rotate(10deg);
+  }
+
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  i {
+    transition: 0.4s;
+  }
+
+  i:hover {
+    transition: 0.4s;
+    color: #e43225;
+  }
 }
